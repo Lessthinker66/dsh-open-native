@@ -1,0 +1,60 @@
+{
+  "name": "dsh-open-native",
+  "version": "1.1.1",
+  "description": "Open delivered files with the system default app instead of DSH's built-in sidebar preview（点交付卡片直接用系统默认程序打开，不再进侧边栏预览）",
+  "license": "MIT",
+  "author": "Lessthinker66 (https://github.com/Lessthinker66)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lessthinker66/dsh-open-native.git"
+  },
+  "homepage": "https://github.com/Lessthinker66/dsh-open-native#readme",
+  "bugs": {
+    "url": "https://github.com/Lessthinker66/dsh-open-native/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "deliverables",
+    "open-with-default-app"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "icon": "icon.svg",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./locale/*": "./locale/*",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "locale",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.2.0-rc.2"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-api-gateway",
+        "@deepseek-ai/dsh-api-remotes",
+        "@deepseek-ai/dsh-api-session-controller"
+      ],
+      "platform": "web"
+    }
+  }
+}

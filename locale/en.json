@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Open Natively",
+    "description": "Clicking a delivered file opens it with your system default application instead of DSH's in-app preview."
+  }
+}

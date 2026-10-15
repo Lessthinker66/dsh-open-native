@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="用系统默认程序打开">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5b86ff"/>
+      <stop offset="1" stop-color="#2b4ad0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="128" height="128" rx="28" fill="url(#bg)"/>
+
+  <!-- 文件 -->
+  <path d="M38 22h30l20 20v48a8 8 0 0 1-8 8H38a8 8 0 0 1-8-8V30a8 8 0 0 1 8-8z"
+        fill="#ffffff" opacity="0.96"/>
+  <!-- 右上折角 -->
+  <path d="M68 22l20 20H72a4 4 0 0 1-4-4z" fill="#c2d2ff"/>
+  <!-- 文件上的几行字 -->
+  <g stroke="#9fb4e8" stroke-width="5" stroke-linecap="round">
+    <path d="M45 60h34"/>
+    <path d="M45 74h26"/>
+  </g>
+
+  <!-- 外开箭头徽标 -->
+  <circle cx="95" cy="95" r="25" fill="#ffffff"/>
+  <g stroke="#2b4ad0" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M85 105L101 89"/>
+    <path d="M92 85h13v13"/>
+  </g>
+</svg>

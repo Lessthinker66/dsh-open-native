@@ -1,0 +1,6 @@
+# dsh-open-native bundle patch: mounts this plugin into every profile that
+# lists this bundle. Applied as a bundle layer, before the profile's own
+# cordis.patch.yml.
+- insert:
+    - id: open-native
+      name: dsh-open-native
